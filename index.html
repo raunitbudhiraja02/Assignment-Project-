@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> resposive navbar</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <nav><ul class="sidebar">
+        <li onclick="hideSidebar()"><a href='#'><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href='#'>Home Cleaning</a></li>
+        <li><a href='#'>Repairs</a></li>
+        <li><a href='#'>Mini Services</a></li>
+        <li><a href='#'>Combo Offers</a></li>
+        <li><a href='#'>Contact Us</a></li>
+        
+                </ul>
+        <ul>
+<li><a href='#'><h2>JustCleanIt</h2> @Home Services</a></li>
+<li><a href='#'><h3>About</h3></a></li>
+<li><a href='#'><h3>Products</h3></a></li>
+<li><a href='#'><h3>Services</h3></a></li>
+<li><a href='#'><h3>FAQ</h3></a></li>
+<li><a href='#'><h3>Log In</h3></a></li>
+<li onclick="showSidebar()"><a href='#'><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+
+        </ul>
+    </nav>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display ='flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display ='none'
+
+        }
+    </script>
+
+
+    <div class="blur-text-container">
+        <span class="blur-text"> Coming</span>
+        <span class="blur-text">Soon.</span>
+    </div>
+
+
+
+</body>
+</html>
